@@ -1,1 +1,17 @@
+on:
+  puch:
+    branches:
+      - master
 
+
+
+
+      jobs:
+        build:
+          runs-on: ubuntu-latest
+
+          steps:
+            - uses: actions/checkout@v3
+
+            - name: "login to docker"
+              run: docker login --username mahmoudelsayed481 --password dckr_pat_N-L0_9Tg3CxQiCJnYsOJAoTXq2w
