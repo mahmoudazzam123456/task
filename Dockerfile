@@ -9,4 +9,4 @@ RUN apk add --update nodejs npm
 RUN npm install express
 
 
-CMD node index.js 
+CMD node test.js 
